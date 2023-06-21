@@ -1,0 +1,26 @@
+@use "./reset";
+@use "./vars" as v;
+
+body {
+  font-family: sans-serif;
+  background-color: v.$color-base;
+}
+
+.todolist {
+  width: 90%;
+  margin: v.$gutter * 2 auto;
+  max-width: 600px;
+}
+.state {
+  background-color: white;
+}
+/* 
+  // or you can import your own font
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Regular.ttf');
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+*/
